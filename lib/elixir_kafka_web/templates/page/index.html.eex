@@ -1,6 +1,17 @@
 <section class="row">
   <%= form_for @conn, Routes.foo_path(@conn, :create), fn f -> %>
-    <%= text_input f, :content %>
+    <label for="content">Message content</label>
+    <%= text_input f, :content, required: true %>
     <button type="submit">Add new job</button>
   <% end %>
+</section>
+<section class="row">
+  <pre>
+    message = %{
+      customer_id: 123,
+      month: 9,
+      amount_paid: 456.78,
+      message: params["content"]
+    }
+  </pre>
 </section>
