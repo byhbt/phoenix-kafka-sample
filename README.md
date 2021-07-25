@@ -18,7 +18,7 @@ docker compose up
 
 ## Some useful command:
 
-**Create topic**
+**Create a topic**
 
 ```bash
 docker compose exec kafka  \
@@ -38,3 +38,10 @@ docker-compose exec kafka  \
 docker compose exec kafka  \
   kafka-topics --describe --topic foo --zookeeper zookeeper:2181
 ```
+
+**List messages in the topic**
+
+```bash
+docker compose exec kafka kafka-console-consumer --bootstrap-server localhost:29092 --topic emails --from-beginning
+```
+
