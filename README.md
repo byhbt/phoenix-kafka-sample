@@ -1,14 +1,16 @@
-# Phoenix Kafka
+# Introduction
 
-Sample Phoenix Application for demo connecting to Kafka.
+This is a sample Phoenix Application for demo connecting to Kafka. To see it in action, you can checkout the video here: https://youtu.be/Xwl0MKCnL_Y
 
 ## Features
 
 - Setup local development environment using Docker Compose.
-- Kowl for viewer Kafka.
-- Kaffe Library for connecting to Kafka.
+- [Kowl](https://github.com/cloudhut/kowl) explore Kafka messages.
+- [Kaffe](https://github.com/spreedly/kaffe) Kafka client library for Phoenix projects.
 
-## Start
+## Up and running
+
+Just run docker-compose up.
 
 ```bash
 docker compose up
@@ -36,6 +38,3 @@ docker-compose exec kafka  \
 docker compose exec kafka  \
   kafka-topics --describe --topic foo --zookeeper zookeeper:2181
 ```
-
-## Video demo:
-- https://youtu.be/Xwl0MKCnL_Y
