@@ -15,3 +15,4 @@ docker compose up
 ```
 
 ## Video demo:
+- https://youtu.be/Xwl0MKCnL_Y
